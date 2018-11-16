@@ -1,0 +1,207 @@
+body, input, button, option, textarea, label, legend, h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+{
+    font: 14px/18px Helvetica,Arial,'DejaVu Sans','Liberation Sans',Freesans,sans-serif;
+}
+
+h1
+{
+	display: block;
+	margin: 0 0 0 10px;
+	float: left;
+	overflow: hidden;/*khi k đủ chứa text thì phần text bị dư sẽ giấu đi*/
+	font-size: 24px;
+	color: #333;
+	line-height: 40px;/*tăng khoảng cách dòng*/
+}
+
+.rowdetail
+{
+	display: block;
+	border-top: 1px solid #e5e5e5;
+	padding: 15px 0;
+	margin-top: 5px;
+	clear: both;
+}
+
+.overlaycertainimg/*nền khi ấn vào hình*/
+{
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: fixed;/*Định vị cho thành phần theo cửa sổ trình duyệt*/
+	z-index: 1;/*Cho nằm lên trên màn hình*/
+	top: 0;
+	left: 0;
+	background: #000;
+}
+
+.overlaycertainimg .close/*Nút tắt hình*/
+{
+	position: absolute;/*Định vị tuyệt đối theo thành phần bao ngoài (cửa sổ trình duyệt)*/
+	font-size: 50px;
+	top: 15px;
+	right: 45px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.overlaycertainimg-content
+{
+	width: 100%;
+}
+
+.overlaycertainimg-content img
+{
+	background-color: #fff;
+	display: block;
+}
+
+.overlaycertainimg-content img.bigimg/*hình lớn ở certainimg*/
+{
+	height: 540px;
+}
+
+.overlaycertainimg-content img.smallimg/*hình nhỏ ở certainimg*/
+{
+	margin: 25px 1px;
+	float: left;
+	width: 96px;
+	height: 70px;
+}
+
+.overlaycertainimg-content img.smallimg:hover
+{
+	border: 1px #00afea solid;
+	-webkit-transform: scale(1.1, 1.1);
+	-ms-transform: scale(1.1, 1.1);
+	-o-transform: scale(1.1, 1.1);
+	transform: scale(1.1, 1.1);
+}
+
+.picture
+{
+	float: left;
+	overflow: hidden;
+	width: 40%;
+	position: relative;/*định vị trí phụ thuộc vào thành phần bao ngoài*/
+	display: block;
+}
+
+.picture img
+{
+	display: block;
+	height: auto;
+	margin: auto;
+	cursor: pointer;/*thay đổi trỏ chuột đi đưa vào*/;
+	max-width: 100%;
+}
+
+.price_sale
+{
+	float: left;
+	position: relative;
+	width: 35%;
+	display: block;
+}
+
+.area_price
+{
+	display: block;
+	overflow: hidden;
+	line-height: 20px;
+	padding: 0 10px 10px;
+}
+
+.area_price strong
+{
+	display: inline-block;/*hối nội tuyến*/
+	overflow: hidden;
+	font-size: 24px;
+	color: #e10c00;
+	vertical-align: middle;/*thành phần sẽ đc canh giữa theo thành phần bao ngoài*/
+	margin-right: 10px;
+}
+
+.area_price label
+{
+	display: inline-block;
+	position: relative;
+	font-size: 11px;
+	color: #fff;
+	font-weight: 600;/*hiển thị chữ đậm hay chữ thường*/
+	border-radius: 3px;
+	padding: 0 5px 0 8px;
+	height: 18px;
+}
+
+.area_price label.installment
+{
+	background: #f28902;
+	margin: 0 0 0 5px;
+}
+
+.ship
+{
+	background-color: #ecf7ed;
+	border-radius: 3px;
+	border: 1px solid #c4ddc8;
+	margin: 5px 10px 10px;
+	padding: 0 10px;
+	font-weight: bold;
+	line-height: 30px;
+}
+
+.ship img
+{
+	width: 19px;
+	height: 21px;
+	margin: 4px 10px 0 0;
+	float: left;
+}
+
+.ship div
+{
+	border-left: 1px solid #c4ddc8;
+	display: block;
+	line-height: 30px;
+	padding-left: 10px;
+	margin-left: 28px;
+	color: #30a43b;
+	max-width: 1200px;
+}
+
+.area_promo
+{
+	border: 1px solid #ddd;
+	display: block;
+	overflow: hidden;
+	border-radius: 4px;
+	position: relative;
+	margin: 5px 10px 12px;
+	padding-bottom: 10px;
+}
+
+.area_promo strong
+{
+	display: block;
+	overflow: hidden;
+	font-size: 15px;
+	padding: 15px 15px 10px 15px;
+	text-transform: uppercase;/*Viết thành chữ hoa*/
+}
+
+.area_promo .promo
+{
+	display: block;
+	overflow: hidden;
+	font-size: 14px;
+	padding: 0 15px 5px 40px;
+}
+
+.promo img
+{
+	width: 14px;
+	height: 14px;
+	float: left;
+	margin: 2px 0 0 -20px;
+}
