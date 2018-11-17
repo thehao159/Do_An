@@ -205,3 +205,31 @@ h1
 	float: left;
 	margin: 2px 0 0 -20px;
 }
+
+.area_order
+{
+	display: block;
+	overflow: hidden;
+	margin: 10px;
+}
+
+.area_order .buy_now
+{
+	display: block;
+	overflow: hidden;
+	padding: 7px 0;
+	border-radius: 4px;
+	font-size: 16px;
+	line-height: normal;
+	color: #fff;
+	text-align: center;
+	background: -webkit-linear-gradient(top,#f59000,#fd6e1d);
+	text-decoration: none;
+}
+
+.area_order .buy_now p
+{
+	display: block;
+	font-size: 13px;
+	margin: 3px 0;
+}
