@@ -3,6 +3,21 @@ body, input, button, option, textarea, label, legend, h1, h2, h3, h4, h5, h6, h1
     font: 14px/18px Helvetica,Arial,'DejaVu Sans','Liberation Sans',Freesans,sans-serif;
 }
 
+/* Use for auto clear float */
+/* ====== https://css-tricks.com/snippets/css/clear-fix/ ======== */
+    .group:before,
+    .group:after {
+      content: "";
+      display: table;
+    } 
+    .group:after {
+      clear: both;
+    }
+    .group {
+      zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+    }
+/* ===== End clear float ====== */
+
 h1
 {
 	display: block;
@@ -93,7 +108,7 @@ h1
 {
 	float: left;
 	overflow: hidden;
-	width: 40%;
+	width: 33%;
 	position: relative;/*định vị trí phụ thuộc vào thành phần bao ngoài*/
 	display: block;
 }
@@ -111,7 +126,7 @@ h1
 {
 	float: left;
 	position: relative;
-	width: 35%;
+	width: 33%;
 	display: block;
 }
 
@@ -291,7 +306,7 @@ h1
 
 .info_product
 {
-	width: 24%;
+	width: 33%;
 	border: 1px solid #ddd;
 	float: left;
 	border-radius: 3px;
