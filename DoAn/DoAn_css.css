@@ -53,25 +53,36 @@ h1
 .overlaycertainimg-content img
 {
 	background-color: #fff;
-	display: block;
 }
 
 .overlaycertainimg-content img.bigimg/*hình lớn ở certainimg*/
 {
 	height: 540px;
+	display: block;
+	margin: auto;
 }
 
-.overlaycertainimg-content img.smallimg/*hình nhỏ ở certainimg*/
+.overlaycertainimg-content .div_smallimg/*hình nhỏ ở certainimg*/
 {
-	margin: 25px 1px;
-	float: left;
+	margin-top: 25px;
+	width: 100%;
+	text-align: center;
+}
+
+.overlaycertainimg-content .div_smallimg .smallimg
+{
+	display: block;
+}
+
+.overlaycertainimg-content .div_smallimg .smallimg img
+{
 	width: 96px;
 	height: 70px;
+	margin: 0 2px;
 }
 
-.overlaycertainimg-content img.smallimg:hover
+.overlaycertainimg-content .div_smallimg .smallimg img:hover
 {
-	border: 1px #00afea solid;
 	-webkit-transform: scale(1.1, 1.1);
 	-ms-transform: scale(1.1, 1.1);
 	-o-transform: scale(1.1, 1.1);
@@ -232,4 +243,48 @@ h1
 	display: block;
 	font-size: 13px;
 	margin: 3px 0;
+}
+
+.policy
+{
+	display: block;
+	overflow: hidden;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding-top: 10px;
+	margin: 0 10px 10px 10px;
+	padding-bottom: 5px;
+}
+
+.policy div
+{
+	display: block;
+	overflow: hidden;
+	padding: 5px 0 5px 5px;
+	font-size: 14px;
+	line-height: 20px;
+	margin: 0 10px;
+	border-bottom: 1px solid #f0f0f0;
+	position: relative;
+}
+
+.policy div img
+{
+	background: #fff;
+	display: block;
+	width: 20px;
+	height: 17px;
+	float: left;
+	margin: 3px;
+}
+
+.policy div p
+{
+	margin: 0 0 0 28px;
+	color: #288ad6;
+}
+
+.policy div.last
+{
+	border-bottom: 0px;
 }
